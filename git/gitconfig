@@ -1,0 +1,14 @@
+[user]
+	email = heweiping6@163.com
+	name = Weiping He
+[alias]
+	co = checkout
+	d = diff
+	br = branch
+	s = status
+	c = commit
+	cm = commit -m
+	ca = commit --amend
+	ll = log --stat --abbrev-commit
+	l = log --graph --all
+

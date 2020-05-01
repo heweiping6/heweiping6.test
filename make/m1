@@ -1,0 +1,19 @@
+# Copyright (C) 2020 Weiping
+# Author(s): Weiping
+#
+# License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+# Please take look heweiping6.test/LICENSE for whole information.
+#
+
+
+PHONY: all me
+
+define myffff
+all:
+	echo "xx,$1,$$1,$$($1)"
+endef
+
+$(eval $(call myffff,"ARGC"))
+
+#me:
+#	echo "FFff"
