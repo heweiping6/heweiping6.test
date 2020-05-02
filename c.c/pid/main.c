@@ -8,12 +8,13 @@
  * */
 
 
-package main
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
 
-import "one"
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
+int main() {
+  pid_t p = getpid();
+  printf("pid: 0x%x=%d\n", p, p);
 }
 

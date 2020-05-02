@@ -8,12 +8,22 @@
  * */
 
 
-package main
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include "func.h"
 
-import "one"
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
+static void test1() {
+  weakorstrong();
 }
+
+int main(int argc, char **argv) {
+
+  test1();
+
+  return (0);
+}
+  
+
 

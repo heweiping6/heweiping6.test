@@ -1,0 +1,24 @@
+This is the example for C++ call C function.
+
+-e1.h is the header for e1.c, and 'add' function will be call by C++, 
+ c can not identify extern "C" so, not need in e1.h. 
+In this case, first write the C file, then we did not want to modify C.h, 
+ or, only support the C library.
+
+ NOTE: We can define extern "C" in this header.
+ In this case, this file can not build in C environment.
+
+-in main.c, if need include e1.h, must add keyword extern "C", it mean tell the
+ complier we want to build this file with C ways. 
+ NOTE:
+ this example can not build with this command, g++ -o eee e1.c and main.cpp
+ show this error, ```undefined reference to `add' ```, it because it want to
+ found 'add' function use C way, but g++ build e1.c with the C++ way,  
+
+ If use this two command it can works, first build the .o, then build the
+ application, gcc -c e1.c and g++ -o eee main.cpp e1.o
+
+3 ways to call C function in C++
+ -1, only add the c header, not need change the c files,
+ -2, if only one or two function, we can use this way
+ -3, not need modify cpp, but need modify c header file 

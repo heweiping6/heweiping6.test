@@ -1,19 +1,13 @@
 # Copyright (C) 2020 Weiping He
-# Author(s): Weiping He
+# Author(s): Weiping he
 #
 # License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 # Please take look heweiping6.test/LICENSE for whole information.
 #
 
+#programe name
+#dataset.xml
+#start index
 
-PHONY: all me
+./test_pickFaceByDlib dlib_face_detector_training_data/frontal_faces.xml  1
 
-define myffff
-all:
-	echo "xx,$1,$$1,$$($1)"
-endef
-
-$(eval $(call myffff,"ARGC"))
-
-#me:
-#	echo "FFff"

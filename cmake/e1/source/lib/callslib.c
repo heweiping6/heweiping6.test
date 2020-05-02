@@ -8,12 +8,12 @@
  * */
 
 
-package main
+#include <stdio.h>
+#include "callslib.h"
 
-import "one"
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
+int call_s_lib(void) {
+  printf("This is S library,show this line!\n");
+  return (0);
 }
 

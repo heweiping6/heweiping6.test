@@ -8,12 +8,10 @@
  * */
 
 
-package main
+#include "e1.h"
 
-import "one"
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
+int add(int x, int y) {
+  return (x + y);
 }
 

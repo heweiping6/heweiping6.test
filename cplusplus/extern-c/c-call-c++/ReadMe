@@ -1,0 +1,8 @@
+This is the example for C call C++ function.
+-e1.h is the header for e1.cpp, and 'add' function will be call by C, so,
+ we need add extern "C" in e1.h, 
+ make sure the object will be compile as the C way.
+
+-in main.c, need declear the 'add' function in main.c. 
+ Because C can not identiffy "C", so can not include e1.h 
+

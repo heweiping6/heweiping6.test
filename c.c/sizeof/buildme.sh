@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Copyright (C) 2020 Weiping He
 # Author(s): Weiping He
 #
@@ -5,15 +7,9 @@
 # Please take look heweiping6.test/LICENSE for whole information.
 #
 
+MYAPP=test_sizeof
+MYSRC=main.c
+MFLAG="-Wall -g"
 
-PHONY: all me
-
-define myffff
-all:
-	echo "xx,$1,$$1,$$($1)"
-endef
-
-$(eval $(call myffff,"ARGC"))
-
-#me:
-#	echo "FFff"
+rm -rfv $MYAPP
+gcc $MFLAG -o $MYAPP $MYSRC

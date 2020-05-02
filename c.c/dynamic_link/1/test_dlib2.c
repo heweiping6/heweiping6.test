@@ -8,12 +8,10 @@
  * */
 
 
-package main
+#include <stdio.h>
 
-import "one"
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
+void test_dlib2(void) {
+  printf("  test_dlib2 Have a bad day!\n");
 }
 

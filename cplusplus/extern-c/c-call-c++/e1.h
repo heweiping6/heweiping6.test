@@ -8,12 +8,9 @@
  * */
 
 
-package main
+#ifndef __CPP_E1_H__
+#define __CPP_E1_H__
 
-import "one"
+extern "C" int add( int x, int y );
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
-}
-
+#endif

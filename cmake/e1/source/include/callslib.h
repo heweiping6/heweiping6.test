@@ -8,12 +8,9 @@
  * */
 
 
-package main
+#ifndef __CALLSLIB_H__
+#define __CALLSLIB_H__
 
-import "one"
+int call_s_lib(void);
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
-}
-
+#endif

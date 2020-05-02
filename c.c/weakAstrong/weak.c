@@ -8,12 +8,11 @@
  * */
 
 
-package main
+#include <stdlib.h>
+#include <stdio.h>
 
-import "one"
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
+void __attribute__((weak)) weakorstrong() {
+  printf("this is weak.\n");
 }
 

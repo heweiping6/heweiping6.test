@@ -8,12 +8,22 @@
  * */
 
 
-package main
-
-import "one"
-
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
+//way 1
+/*
+extern "C" {
+#include "e1.h"
 }
+ */
+
+
+//way 2
+extern "C" int add(int x, int y);
+
+
+int main(int argc, char *argv[]) {
+  add(2, 3);
+  return (0);
+}
+
+
 

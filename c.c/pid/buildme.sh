@@ -1,19 +1,17 @@
-# Copyright (C) 2020 Weiping He
+#!/bin/bash
+
+# Copyright (C) 2020 Weiping he
 # Author(s): Weiping He
 #
 # License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 # Please take look heweiping6.test/LICENSE for whole information.
 #
 
+MYAPP=test_pid
+MFLAG="-Wall -g"
 
-PHONY: all me
+MYSRC=main.c
 
-define myffff
-all:
-	echo "xx,$1,$$1,$$($1)"
-endef
+rm -rfv $MYAPP
 
-$(eval $(call myffff,"ARGC"))
-
-#me:
-#	echo "FFff"
+gcc $MFLAG -o $MYAPP $MYSRC

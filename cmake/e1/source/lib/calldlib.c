@@ -8,12 +8,12 @@
  * */
 
 
-package main
+#include <stdio.h>
+#include "calldlib.h"
 
-import "one"
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
+int call_d_lib(void) {
+  printf("This is D library,show this line!\n");
+  return (0);
 }
 

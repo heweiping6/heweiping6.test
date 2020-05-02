@@ -8,12 +8,10 @@
  * */
 
 
-package main
+#ifndef __FUNC_H__
+#define __FUNC_H__
 
-import "one"
+void __attribute__((weak)) weakorstrong();
 
-func main() {
-	one.OLog("ONE!!!\n")
-	one.RegHeartBeat()
-}
 
+#endif

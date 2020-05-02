@@ -1,0 +1,28 @@
+# Copyright (C) 2020 Weiping He
+# Author(s): Weiping He
+#
+# License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+# Please take look heweiping6.test/LICENSE for whole information.
+#
+
+
+cmake_minimum_required(VERSION 3.10.2)
+
+
+MESSAGE(STATUS "CMAKE_TOP = ${CMAKE_TOP}")
+MESSAGE(STATUS "CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
+
+PROJECT(aaa)
+
+MESSAGE("top file PROJECT_NAME=${PROJECT_NAME}")
+MESSAGE("top file aaa_SOURCE_DIR=${aa_SOURCE_DIR}")
+MESSAGE("top file aaa_BINARY_DIR=${aa_BINARY_DIR}")
+MESSAGE("top file PROJECT_SOURCE_DIR=${PROJECT_SOURCE_DIR}")
+MESSAGE("top file PROJECT_BINARY_DIR=${PROJECT_BINARY_DIR}")
+MESSAGE("top file CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
+MESSAGE("top file CMAKE_BINARY_DIR=${CMAKE_BINARY_DIR}")
+
+
+ADD_SUBDIRECTORY(source)
+
+MESSAGE(STATUS "end...")
